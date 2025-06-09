@@ -20,13 +20,6 @@ Aidan: coderen, communicatie, data-analyse plannen.
 Deniz: planning, theorie, uitleggen.
 Marit: coderen, data-analyse, theorie.
 
-Zwaktes teamleden:
-Iedereen heeft het druk.
-Luna: slecht in plannen, vaak te laat, weinig kennis van coderen en kwantum.
-Aidan: moeite met planning, weinig kennis van kwantum.
-Deniz: moeite met data-analyse, wisselende werkhouding.
-Marit: dyslexie, weinig energie, moeite met op tijd komen en plannen.
-
 Wat is er nodig om de missie te halen?
 Goede communicatie.
 Werken aan zwaktes
