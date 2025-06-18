@@ -56,5 +56,5 @@ class CorrectLittrowConfig(Scene):
                   )
         self.wait(2)
 
-        
+        lasdgawegab
         self.play(*[FadeOut(mob) for mob in [emitter, grating, incident_beam, first_order_beam, zeroth_beam]])
