@@ -1,4 +1,6 @@
 link naar overleaf: https://www.overleaf.com/project/683d6d3c5f84d9f9e04b5311 het labjournaal, logboek, meeting aantekeingen en agenda https://www.overleaf.com/project/684eb2389a61161f8146ca14 poster basis.
+poster: https://canvas.uva.nl/courses/45845/pages/sterrenkundeposter-en-practicum-3?module_item_id=2334188
+
 uitleg goed labjournaal: https://nl.wikipedia.org/wiki/Labjournaal
 Doel van project: zo veel mogenlijk leren
 
