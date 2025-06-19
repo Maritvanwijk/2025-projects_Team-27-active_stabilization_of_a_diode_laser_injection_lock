@@ -1,0 +1,31 @@
+These are the instructions for hooking the microcontroller up:
+1. Hook the masterclock signal PA6 up to the masterclock pin on the CCD.
+2. Hook the ICG signal PA0 up to the ICG pin on the CCD.
+3. Hook the SH signal PA1 up to the SH pin on the CCD.
+Timer 4 is not being used at the moment due to the Serial output not being read by the computer properly.
+Therfor it could be that the ADC1 signal is not being the displayed in the software on pin PA3. This however is not a problem.
+The output of the CCD is being read by the oscilloscope directly from the CCD itself rather than going through the transistor because of the increased noise that the transistor added to the signal.
+The oscilloscope was further hooked up to the ICG clock signal and set to trigger on the falling edge of the ICG signal.
+The impedance of the oscilloscope was set to 1M ohm and the coupling was set to DC.
+
+Instructions for setting integration time:
+The integration time can only be some speciffic values due to the SH signal (which controls the integration time) to have to be in sync with the ICG timer and also the masterclock.
+Because the ICG clock and the master clock already being in sync with each other the only thing left to worry about is the syncing of the SH and the ICG clocks.
+This can be achieved by having the SH clock time (the ARR) a fraction of the ICG signal time (the ARR).
+I have found two ways of achieving this the first is a bit of a hasle and the second is slightly easier.
+
+First way:
+This fraction can however not be rounded since then the clocks will go out of sync and therfor a true fraction has to be found.
+The easiest way I have found to do this is by first finding a fraction and then seeing if the integration time is too long or too short of the desired.
+To find a fraction I have found the website https://www.numberempire.com/numberfactorizer.php which allows the factorisation of the ICG ARR (which in my case was 201492).
+To then get a fraction it was a simple case of multiplying the found factors and seeing if the resulting fraction caused a too long or too short of an integration time.
+Care has to be taken however to only multiply the factors a maximum of times it is in the factorisation of the ICG ARR.
+In my case 201492 factorizes into 2^2 * 3^2 * 29 * 193. This means that for example 2^3=8 is not a fraction of the number and therfor cannot be used as the ARR of the SH signal.
+Another problem is that the result must be greater than 108 because this is the amount of time the SH signal is high.
+
+Second way:
+1.  Start with the desired integration time and try to see how many SH peaks are needed to achieve this.
+    This can be done by deviding the total time of the ICG (which was around 6.599ms in my case) by a desired time and rounding the result. This gives the number of SH peaks there need to be in order to achieve the integration time.
+2.  Now try to find a close match of the found peaks and a fraction of the of the ICG ARR (201492).
+3.  Devide ARR by the resulting fraction and this is the ARR which the SH timer should be set to.
+If there is a integration which can not be made by this method the ICG ARR can be altered to have more factors to make more precise matches in step 2. This does require syncing of the master clock and ICG clock.
