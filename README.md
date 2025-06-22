@@ -1,6 +1,7 @@
 link naar overleaf: https://www.overleaf.com/project/683d6d3c5f84d9f9e04b5311 het labjournaal, logboek, meeting aantekeingen en agenda https://www.overleaf.com/project/684eb2389a61161f8146ca14 poster basis.
 poster: https://canvas.uva.nl/courses/45845/pages/sterrenkundeposter-en-practicum-3?module_item_id=2334188
 Youtube filmpje die we hebben gebruikt om de microcontriller te begrijpen en te programmeren: https://www.youtube.com/watch?v=HUR3rHimIv0
+canva poster: https://www.canva.com/design/DAGqhPuDId8/jBh9DyO8QZ8WsJvsUwXK5w/edit?utm_content=DAGqhPuDId8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 uitleg goed labjournaal: https://nl.wikipedia.org/wiki/Labjournaal
 Doel van project: zo veel mogenlijk leren
